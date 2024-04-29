@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <androidx.camera.view.PreviewView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/preview"
+        >
+
+    </androidx.camera.view.PreviewView>
+
+    <com.myapp.area.GraffitiView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/draw"
+        />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="clear"
+        android:id="@+id/btn1"
+
+        android:layout_alignParentEnd="true"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="绘制区域"
+        android:id="@+id/btn2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="50dp"
+
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="选择目标"
+        android:id="@+id/btn3"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="100dp"
+        />
+
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/image"
+
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/txt"
+        android:background="@color/yellow"
+
+        />
+    <com.myapp.area.Myview
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/myview"
+
+        />
+
+
+
+
+
+</RelativeLayout>
